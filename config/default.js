@@ -17,8 +17,8 @@ module.exports = {
     stateDb: {
       protocol: 'mongodb:',
       port: 27017,
-      hostname: process.env.MONGODB_CRON_HOSTNAME || 'ovirt.ria.com',
-      database: process.env.MONGODB_CRON_DATABASE || 27019,
+      hostname: process.env.MONGODB_CRON_HOSTNAME,
+      database: process.env.MONGODB_CRON_DATABASE,
       collection: pkg.name,
     },
   },
